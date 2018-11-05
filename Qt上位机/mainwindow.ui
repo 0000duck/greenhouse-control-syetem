@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>953</width>
+    <height>513</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>华文仿宋</family>
+    <pointsize>13</pointsize>
+   </font>
+  </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>温室大棚自动控制调节系统</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="images.qrc">
+    <normaloff>:/actions/images/background/Money Bag_48px.png</normaloff>:/actions/images/background/Money Bag_48px.png</iconset>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextBesideIcon</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QStackedWidget" name="stackedWidget">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="statusTip">
+         <string/>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="currentIndex">
+         <number>-1</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QLabel" name="TipLabel">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>欢迎使用温室大棚控制调节系统</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>953</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="nativeMenuBar">
+    <bool>false</bool>
+   </property>
+   <widget class="QMenu" name="menu_F">
+    <property name="title">
+     <string>大棚信息(&amp;F)</string>
+    </property>
+    <addaction name="actionUpdate"/>
+    <addaction name="actionDapengIntroduce"/>
+    <addaction name="actionCompanyIntroduce"/>
+    <addaction name="actionDetectIntro"/>
+   </widget>
+   <widget class="QMenu" name="menu_W">
+    <property name="title">
+     <string>窗口设置(&amp;W)</string>
+    </property>
+    <addaction name="actionSkinSet"/>
+    <addaction name="actionThemeColor"/>
+   </widget>
+   <widget class="QMenu" name="menu_H">
+    <property name="title">
+     <string>帮助(&amp;H)</string>
+    </property>
+    <addaction name="actionuse_help_U"/>
+   </widget>
+   <widget class="QMenu" name="menu_A">
+    <property name="title">
+     <string>关于(&amp;A)</string>
+    </property>
+    <addaction name="actionabout_A"/>
+   </widget>
+   <addaction name="menu_F"/>
+   <addaction name="menu_W"/>
+   <addaction name="menu_H"/>
+   <addaction name="menu_A"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
+   <property name="floatable">
+    <bool>true</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionDetectFirstPage"/>
+   <addaction name="separator"/>
+   <addaction name="actionRealData"/>
+   <addaction name="separator"/>
+   <addaction name="actionHistoryDta"/>
+   <addaction name="separator"/>
+   <addaction name="actionDeviceManage"/>
+   <addaction name="separator"/>
+   <addaction name="actionWarnManage"/>
+   <addaction name="separator"/>
+   <addaction name="actionUserManage"/>
+   <addaction name="separator"/>
+   <addaction name="actionExit"/>
+  </widget>
+  <action name="actionUpdate">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/actions/images/background/Businessman_48px.png</normaloff>:/actions/images/background/Businessman_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>大棚信息完善(&amp;P)</string>
+   </property>
+  </action>
+  <action name="actionSkinSet">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/actions/images/background/Maintenance_48px.png</normaloff>:/actions/images/background/Maintenance_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>截图(&amp;S)</string>
+   </property>
+  </action>
+  <action name="actionuse_help_U">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/actions/images/background/Help_48px.png</normaloff>:/actions/images/background/Help_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>使用帮助(&amp;H)</string>
+   </property>
+  </action>
+  <action name="actionabout_A">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/actions/images/background/Microsoft Word_48px.png</normaloff>:/actions/images/background/Microsoft Word_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>关于软件(&amp;A)</string>
+   </property>
+  </action>
+  <action name="actionDetectFirstPage">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/actions/images/background/Shutdown_48px.png</normaloff>:/actions/images/background/Shutdown_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>监控首页</string>
+   </property>
+  </action>
+  <action name="actionRealData">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/actions/images/background/Wi-Fi_48px.png</normaloff>:/actions/images/background/Wi-Fi_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>实时数据</string>
+   </property>
+  </action>
+  <action name="actionHistoryDta">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/actions/images/background/Share_48px.png</normaloff>:/actions/images/background/Share_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>历史数据</string>
+   </property>
+  </action>
+  <action name="actionDeviceManage">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/actions/images/background/Edit_48px.png</normaloff>:/actions/images/background/Edit_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>设备管理</string>
+   </property>
+  </action>
+  <action name="actionWarnManage">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/actions/images/background/Error_48px.png</normaloff>:/actions/images/background/Error_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>报警管理</string>
+   </property>
+  </action>
+  <action name="actionUserManage">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/actions/images/background/Businessman_48px.png</normaloff>:/actions/images/background/Businessman_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>用户管理</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/exit.png</normaloff>:/images/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actionDapengIntroduce">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/actions/images/background/Chat_48px.png</normaloff>:/actions/images/background/Chat_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>大棚简介(&amp;I)</string>
+   </property>
+  </action>
+  <action name="actionCompanyIntroduce">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/login/Double Right_48px.png</normaloff>:/images/login/Double Right_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>公司简介(&amp;C)</string>
+   </property>
+  </action>
+  <action name="actionThemeColor">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/background/aio.png</normaloff>:/images/background/aio.png</iconset>
+   </property>
+   <property name="text">
+    <string>上传(&amp;T)</string>
+   </property>
+  </action>
+  <action name="actionDetectIntro">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/actions/images/background/Message Filled_48px.png</normaloff>:/actions/images/background/Message Filled_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>检测控制简介(&amp;D)</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionExit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>434</x>
+     <y>273</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

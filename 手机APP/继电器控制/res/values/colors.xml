@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="title_bar_background">#ff15a0f5</color>
+    <color name="app_background">#ffcdcdcd</color>
+    <color name="app_text_color">#ff6c6f6c</color>
+</resources>

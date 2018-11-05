@@ -1,0 +1,90 @@
+﻿<RCC>
+    <qresource prefix="/">
+        <file>images/login/AgeingMask0.jpg</file>
+        <file>images/login/PldMask1.png</file>
+        <file>images/login/LomoMask0.jpg</file>
+        <file>images/login/SkinMgr_bg2.png</file>
+        <file>images/login/skin.png</file>
+        <file>images/close.png</file>
+        <file>images/login/book.jpg</file>
+        <file>images/login/log.png</file>
+        <file>images/loginbk1.jpg</file>
+        <file>images/Enter.png</file>
+        <file>images/exit.png</file>
+        <file>images/background/aio.png</file>
+        <file>images/login/Back_48px.png</file>
+        <file>images/login/Double Down_48px.png</file>
+        <file>images/login/Double Right_48px.png</file>
+        <file>images/login/Down Squared_48px.png</file>
+        <file>images/login/Down_48px.png</file>
+        <file>images/login/Forward Arrow_48px.png</file>
+        <file>images/login/Redo_48px.png</file>
+        <file>images/login/Sort Right_48px.png</file>
+        <file>images/login/Undo_48px.png</file>
+        <file>images/test/7.png</file>
+        <file>images/test/9.png</file>
+        <file>images/test/10.png</file>
+        <file>images/test/b.png</file>
+        <file>images/test/e.png</file>
+        <file>images/test/penguin.png</file>
+        <file>images/test/1.png</file>
+        <file>images/test/2.png</file>
+        <file>images/test/3.png</file>
+        <file>images/realData/Carbon.jpg</file>
+        <file>images/realData/sun.png</file>
+        <file>images/realData/temperature.png</file>
+        <file>images/realData/water.png</file>
+        <file>images/splash.gif</file>
+        <file>images/m13.png</file>
+        <file>images/m14.png</file>
+        <file>images/m8.png</file>
+        <file>images/m1.png</file>
+        <file>images/background/4/skin.png</file>
+        <file>images/background/1/skin.png</file>
+        <file>images/background/2/skin.png</file>
+        <file>images/background/3/skin.png</file>
+        <file>images/background/windowBkg.png</file>
+        <file>images/studentbk17.jpg</file>
+        <file>images/background/1/skin1.png</file>
+        <file>images/Icon/SmartHome.ico</file>
+        <file>ico/arrow.png</file>
+        <file>ico/arrow_down.png</file>
+        <file>ico/caution.png</file>
+        <file>ss/style.ss</file>
+        <file>images/check.png</file>
+        <file>images/noCheck.png</file>
+        <file>images/switch/btncheckon.png</file>
+        <file>images/switch/btncheckoff1.png</file>
+        <file>images/switch/btncheckon1.png</file>
+        <file>images/switch/btnoff.png</file>
+        <file>images/switch/btnon.png</file>
+        <file>images/switch/btncheckoff.png</file>
+    </qresource>
+    <qresource prefix="/actions">
+        <file>images/background/Businessman_48px.png</file>
+        <file>images/background/Chat_48px.png</file>
+        <file>images/background/Conference_48px.png</file>
+        <file>images/background/Edit Property_48px.png</file>
+        <file>images/background/Edit_48px.png</file>
+        <file>images/background/Email_48px.png</file>
+        <file>images/background/Error_48px.png</file>
+        <file>images/background/Hearts_48px.png</file>
+        <file>images/background/Help_48px.png</file>
+        <file>images/background/Maintenance_48px.png</file>
+        <file>images/background/Maintenance_48px_1.png</file>
+        <file>images/background/Menu_48px.png</file>
+        <file>images/background/Message Filled_48px.png</file>
+        <file>images/background/Microsoft Word_48px.png</file>
+        <file>images/background/Money Bag_48px.png</file>
+        <file>images/background/Ok_48px.png</file>
+        <file>images/background/Phone_48px.png</file>
+        <file>images/background/Print_48px.png</file>
+        <file>images/background/Share_48px.png</file>
+        <file>images/background/Shutdown_48px.png</file>
+        <file>images/background/Star_48px.png</file>
+        <file>images/background/Thumb Up_48px.png</file>
+        <file>images/background/User_48px.png</file>
+        <file>images/background/Wi-Fi_48px.png</file>
+        <file>images/background/YouTube 2_48px.png</file>
+    </qresource>
+</RCC>

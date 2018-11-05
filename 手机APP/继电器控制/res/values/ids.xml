@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="ip_input_edittext">false</item>
+    <item type="id" name="disconnect_connect">false</item>
+    <item type="id" name="port_input_edittext">false</item>
+    <item type="id" name="device_status_btn">false</item>
+    <item type="id" name="receive_send_btn">false</item>
+    <item type="id" name="content">false</item>
+    <item type="id" name="led1_button">false</item>
+    <item type="id" name="led2_button">false</item>
+    <item type="id" name="led3_button">false</item>
+    <item type="id" name="buzzer_img">false</item>
+    <item type="id" name="buzzer_btn">false</item>
+    <item type="id" name="thermometer_img">false</item>
+    <item type="id" name="temperature_textview">false</item>
+    <item type="id" name="temperature_symbol">false</item>
+    <item type="id" name="time_img">false</item>
+    <item type="id" name="rtc_time_btn">false</item>
+    <item type="id" name="show_receive_textview">false</item>
+    <item type="id" name="sendmsg_layout">false</item>
+    <item type="id" name="message_content">false</item>
+    <item type="id" name="send_btn">false</item>
+    <item type="id" name="search_button">false</item>
+    <item type="id" name="device_name">false</item>
+    <item type="id" name="device_address">false</item>
+    <item type="id" name="action_settings">false</item>
+</resources>

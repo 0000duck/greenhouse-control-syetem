@@ -1,0 +1,133 @@
+*{outline:0px;}QWidget#errorWidget{border-image: url(:/ico/caution.png);}
+
+*{outline:0px;}DiagRemove{
+      background:#1abc9c;
+      border-radius:5px;
+}   /*提示删除的按钮*/
+
+
+QPushButton{border-style:none;padding:10px;border-radius:5px;color:#FFFFFF;background:#3498DB;}
+QPushButton:hover{color:#E5FEFF;background:#5DACE4;}
+QPushButton:pressed{color:#A0DAFB;background:#2483C7;}
+
+/*btnSave*/
+QPushButton#btnRemove{border-style:none;padding:10px;border-radius:5px;color:#E6F8F5;background:#1ABC9C;}
+QPushButton#btnRemove:hover{color:#FFFFFF;background:#2EE1C1;}
+QPushButton#btnRemove:pressed{color:#A7EEE6;background:#16A086;}
+
+
+/*btnRedo*/
+QPushButton#btnRedo{border-style:none;padding:10px;border-radius:5px;color:#FFFFFF;background:#E74C3C;}
+QPushButton#btnRedo:hover{color:#FFF5E7;background:#EC7064;}
+QPushButton#btnRedo:pressed{color:#F5A996;background:#DC2D1A;}
+
+QPushButton#btnCancle{border-style:none;padding:10px;border-radius:5px;color:#FFFFFF;background:#E74C3C;}
+QPushButton#btnCancle:hover{color:#FFF5E7;background:#EC7064;}
+QPushButton#btnCancle:pressed{color:#F5A996;background:#DC2D1A;}
+
+
+/*tablewidget 样式*/
+QTableView , QTableWidget{
+ selection-background-color:#44c767;
+ background-color:white;/*整个表格的背景色，这里为白色*/
+ border:1px solid #E0DDDC;/*边框为1像素，灰色*/
+ gridline-color:lightgray;/*这个是表格的格子线的颜色，为亮灰*/
+}
+/*这里是表格表头样式*/
+QHeaderView::section{
+ background-color:white;/*背景色 白色*/
+ border:0px solid #E0DDDC;/*先把边框宽度设为0，即隐藏所有表头边框*/
+ border-bottom:1px solid #E0DDDC;/*然后只显示下边框，因为上边框和左右边框是整个Table的边框，都显示会有2px的边框宽度*/
+ height:20px;/*表头高度*/
+}
+
+QScrollBar:horizontal {
+    border: 2px solid grey;
+    background: #32CC99;
+    height: 15px;
+    margin: 0px 20px 0 20px;
+}
+QScrollBar::handle:horizontal {
+    background: white;
+    min-width: 20px;
+}
+QScrollBar::add-line:horizontal {
+    border: 2px solid grey;
+    background: #32CC99;
+    width: 20px;
+    subcontrol-position: right;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:horizontal {
+    border: 2px solid grey;
+    background: #32CC99;
+    width: 20px;
+    subcontrol-position: left;
+    subcontrol-origin: margin;
+}
+
+ QScrollBar:vertical {
+     border: 2px solid grey;
+     background: #32CC99;
+     width: 15px;
+     margin: 22px 0 22px 0;
+ }
+ QScrollBar::handle:vertical {
+     background: white;
+     min-height: 20px;
+ }
+ QScrollBar::add-line:vertical {
+     border: 2px solid grey;
+     background: #32CC99;
+     height: 20px;
+     subcontrol-position: bottom;
+     subcontrol-origin: margin;
+ }
+
+ QScrollBar::sub-line:vertical {
+     border: 2px solid grey;
+     background: #32CC99;
+     height: 20px;
+     subcontrol-position: top;
+     subcontrol-origin: margin;
+ }
+ QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+     border: 2px solid grey;
+     width: 3px;
+     height: 3px;
+     background: white;
+ }
+
+ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+     background: none;
+ }
+
+QComboBox {border: 0px;font-family: \"Arial\"; font-size: 13px; padding: 3px 0x 3px 5px;color:#FFFFFF;background-color:#E74C3C;}
+QComboBox::drop-down {subcontrol-origin: padding; subcontrol-position: top right; width: 30 px; border: 0px;}
+QComboBox::down-arrow {image: url(":/ico/arrow_down.png");}
+
+QListView {font-family: \"Arial\"; font-size: 13px; outline: 0px;}
+QListView::item {padding: 3px 0x 3px 5px; border-width: 0px;}
+/*QListView::item:selected {background-color: rgb(74, 144, 226);}*/
+
+/*RadioButton样式设置*/
+QRadioButton::indicator { 
+    width: 17px;
+    height: 17px;
+}
+/*单选框未选中样式*/
+QRadioButton::indicator::unchecked {
+     
+    image: url(:/images/noCheck.png);
+}
+/*单选框选中样式*/
+QRadioButton::indicator::checked { 
+    image: url(:/images/check.png);
+}
+/*RadioButton和checkbox字体和间距设置*/
+QRadioButton ,QCheckBox{
+    spacing: 5px;
+    font-size: 15px;
+}
+ 

@@ -1,0 +1,171 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    tools:context="com.rjj.controller.FullscreenActivity" >
+	
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@drawable/background"
+        android:layout_height="wrap_content">
+        
+      <LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        
+        <LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_margin="5dp"
+    	android:orientation="horizontal">
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:singleLine="true"
+         android:text="服务器IP地址" />
+	 <EditText
+        android:id="@+id/ip_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请输入IP地址"
+        android:ems="10"
+        android:singleLine="true" />	    
+	</LinearLayout>
+	
+	<LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_margin="5dp"
+    	android:orientation="horizontal">
+     <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="服务器端口号" 
+        android:singleLine="true"/>	
+	 <EditText
+        android:id="@+id/port_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请输入端口号"
+        android:ems="10"
+        android:singleLine="true"/> 
+	 </LinearLayout>
+   </LinearLayout>
+ </LinearLayout>
+
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <Button
+		    android:id="@+id/connectBtn"
+		    android:layout_width="94dp"
+		    android:layout_height="50dp"
+		    android:layout_marginLeft="100dp"
+		    android:background="@drawable/button"
+		    android:text="连接" />
+    </LinearLayout>
+	
+	<LinearLayout 
+	    android:orientation="horizontal" 
+        android:background="@drawable/shape_device_nocorner_border" 
+        android:padding="10.0dip" android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:baselineAligned="false">
+     	<LinearLayout 
+     	    style="@style/led_item_layout_style">
+            <Button 
+               android:id="@+id/led1_button"
+               android:background="@drawable/led_dark" 
+               style="@style/led_button_style" />
+           	<TextView android:textColor="@color/app_text_color" 
+               android:text="@string/led1" 
+               style="@style/led_button_style" />
+            </LinearLayout>
+            <LinearLayout 
+                style="@style/led_item_layout_style">
+                <Button 
+                    android:id="@+id/led2_button" 
+                    android:background="@drawable/led_dark" 
+                    style="@style/led_button_style" />
+                <TextView 
+                    android:textColor="@color/app_text_color" 
+                    android:text="@string/led2" style="@style/led_button_style" />
+            </LinearLayout>
+            <LinearLayout 
+                style="@style/led_item_layout_style">
+                <Button 
+                    android:id="@+id/led3_button" 
+                    android:background="@drawable/led_dark" 
+                    style="@style/led_button_style" />
+                <TextView 
+                    android:textColor="@color/app_text_color" 
+                    android:text="@string/led3" 
+                    style="@style/led_button_style" />
+            </LinearLayout>
+        </LinearLayout>
+	
+ <LinearLayout 
+	    android:orientation="horizontal" 
+        android:background="@drawable/shape_device_nocorner_border" 
+        android:padding="10.0dip" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:baselineAligned="false">
+     	<LinearLayout 
+     	    style="@style/led_item_layout_style">
+            <Button 
+                android:id="@+id/relay1_button"
+               android:background="@drawable/relayclose" 
+               style="@style/led_button_style" />
+           	<TextView 
+           	   android:textColor="@color/app_text_color" 
+               android:text="继电器1" 
+               style="@style/led_button_style" />
+         </LinearLayout>
+         <LinearLayout 
+              style="@style/led_item_layout_style">
+              <Button 
+                  android:id="@+id/relay2_button" 
+                  android:background="@drawable/relayclose" 
+                  style="@style/led_button_style" />
+              <TextView 
+                  android:textColor="@color/app_text_color" 
+                  android:text="继电器2" 
+                  style="@style/led_button_style" />
+          </LinearLayout>
+          <LinearLayout 
+              style="@style/led_item_layout_style">
+              <Button 
+                  android:id="@+id/relay3_button" 
+                  android:background="@drawable/relayclose" 
+                  style="@style/led_button_style" />
+              <TextView 
+                  android:textColor="@color/app_text_color" 
+                  android:text="继电器3" 
+                  style="@style/led_button_style" />
+          </LinearLayout>
+        </LinearLayout>
+        	    
+        <LinearLayout 
+            android:orientation="vertical" 
+	        android:background="@drawable/shape_device_nocorner_border" 
+	        android:padding="10.0dip" 
+	        android:layout_width="fill_parent" 
+	        android:layout_height="120dp" >
+            <TextView 
+                android:id="@+id/receiveTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"  
+                android:maxLines="100"
+                android:scrollbars="vertical"           
+                android:background="@drawable/background"/> 
+         </LinearLayout>
+</LinearLayout>
